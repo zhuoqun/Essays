@@ -6,7 +6,15 @@
 <html>
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>梦想家<?php wp_title(); ?></title>
+<title><?php
+/**
+ * Print the <title> tag based on what is being viewed.
+ */
+bloginfo('name');
+
+wp_title(); 
+
+?></title>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
@@ -27,11 +35,11 @@
 
 <body <?php body_class(); ?>>
     <div id="top">
-      <a href="#bd" id="skip">跳到内容</a>
-      <div class="bd clearfix">
-	<h1><a href="<?php bloginfo('url');?>" title="返回首页">梦想家</a></h1>
-	<div class="desc">
-	  <p>代码是诗</p>
-	</div>
-      </div>
+        <a href="#bd" id="skip">Skip to content</a>
+        <div class="bd clearfix">
+			<h1><a href="<?php bloginfo('url');?>" title="返回首页"><?php bloginfo('name'); ?></a></h1>
+			<div class="desc">
+                <p><?php bloginfo('description'); ?></p>
+			</div>
+        </div>
     </div><!-- #topnav -->

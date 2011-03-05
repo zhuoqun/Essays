@@ -24,21 +24,21 @@ get_header();
 		      <?php the_content(); ?>
 		    </div>
 		  <div class="feedback">
-		    <?php comments_popup_link('暂无评论', '1 条评论', '% 条评论'); ?>
+		    <?php comments_popup_link( __('Leave a comment', 'essays'), __('One Comment', 'essays'), __('% Comments', 'essays')); ?>
 		  </div>
 	    </div>
 <?php endwhile; ?>
 <?php else: ?>
   <div class="not-found">
 <!-- no post found -->
-    <h2>很抱歉，没有你要查找的内容。</h2>
+    <h2><?php __( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'essays' ); ?></h2>
   </div>
 <?php endif; ?>
 
 
 	    <div id="page-nav" class="clearfix">
-	      <p class="fl"><?php next_posts_link('«早一些的日志'); ?></p>
-	      <p class="fr"><?php previous_posts_link('晚一些的日志»'); ?></p>
+	      <p class="fl"><?php next_posts_link( __('« Older posts', 'essays')); ?></p>
+	      <p class="fr"><?php previous_posts_link( __('Newer posts »', 'essays')); ?></p>
 	    </div>
 
 	  </div>

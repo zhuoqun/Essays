@@ -31,7 +31,7 @@ get_header();
 <?php else: ?>
   <div class="not-found">
 <!-- no post found -->
-    <h2><?php __( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'essays' ); ?></h2>
+    <h2><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'essays' ); ?></h2>
   </div>
 <?php endif; ?>
 

@@ -65,10 +65,10 @@ em, cite {font-style:italic;}
 
 #searchform label {display:none;}
 
-.menu h3 {font-size:16px; color:#333; border-bottom:1px solid #dadada; margin-bottom:1em; padding-bottom:4px;}
+.menu h2 {font-size:16px; color:#333; border-bottom:1px solid #dadada; margin-bottom:1em; padding-bottom:4px;}
 .menu li {margin-bottom:22px;}
-.widget-container ul {margin-left:1em;}
-.widget-container li {list-style:square outside none; margin:0;}
+.widget ul {margin-left:1em;}
+.widget li {list-style:square outside none; margin:0;}
 
 #feed {background:url("feedicon.png") no-repeat right top; padding-right:16px;}
 

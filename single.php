@@ -25,7 +25,7 @@ get_header(); ?>
 		      <?php the_content(); ?>
 		    </div>
 		  <div class="feedback">
-		    <?php comments_popup_link('暂无评论', '1 条评论', '% 条评论'); ?>
+		    <?php comments_popup_link( __('Leave a comment', 'essays'), __('One Comment', 'essays'), __('% Comments', 'essays')); ?>
 		  </div>
 	    </div>
 

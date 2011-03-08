@@ -23,6 +23,31 @@ if (!function_exists('essays_setup')) {
 
 }
 
+if ( function_exists('register_sidebar') ) {
+	register_sidebar();
+}
+
+function widget_essays_search() {
+?>
+            <li class="widget-container widget_search" id="search">
+              <form action="" id="searchform" method="get" role="search">
+                <div>
+                  <label for="s" class="screen-reader-text">Search for:</label>
+                  <input type="text" id="s" name="s" value="">
+                  <input type="submit" value="<?php _e('Search', 'essays'); ?>" id="searchsubmit">
+                </div>
+              </form>
+            </li>
+<?php
+}
+
+if ( function_exists('register_sidebar_widget') ) {
+    register_sidebar_widget(__('Search'), 'widget_essays_search');
+}
+
+
+
+/* Customize the comments' style */
 function essays_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
 	?>

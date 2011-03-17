@@ -23,7 +23,7 @@ if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) {
 	    <li>
 	      <h2>关于</h2>
 	      <p>我们称计算机编程为一种艺术，因为它将千锤百炼的知识应用到了世界，因为它需要技巧与天才，更重要的是因为它可以创造美的对象。</p>
-	      <p><a href="mailto:zhuoqunwang@gmail.com">给我发邮件</a> | <a href="http://creativecommons.org/licenses/by-nc-nd/2.5/cn/">创作共用</a> | <a id="feed" href="http://feed.feedsky.com/dreamerlife">订阅</a></p>
+	      <p><a href="">给我发邮件</a> | <a href="http://creativecommons.org/licenses/by-nc-nd/2.5/cn/">创作共用</a> | <a id="feed" href="http://feed.feedsky.com/dreamerlife">订阅</a></p>
 	    </li>
 	    <li class="widget widget_recent_entries" id="recent-posts">
 	      <h2><?php _e('Recent Posts', 'essays'); ?></h2>

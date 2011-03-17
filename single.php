@@ -19,7 +19,7 @@ get_header(); ?>
 	      <div id="post-<?php the_ID(); ?>" class="post">
 		<h2 class="post-title"><a title="<?php the_title_attribute(); ?>" rel="bookmark" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 		<div class="post-data">
-		  <span class="posttime"><?php the_time('Y年n月j日G:i'); ?> - Dreamer</span>
+		  <span class="posttime"><?php the_time('Y年n月j日G:i'); ?> - <?php the_author_link(); ?></span>
 		</div>
 		    <div class="entry">
 		      <?php the_content(); ?>

@@ -4,7 +4,7 @@
 ?>
 	    <div id="comments">
 <?php if ( have_comments() ) : ?>
-	      <h3><?php comments_number( _e('Leave a comment', 'essays'), _e('One Comment', 'essays'), _e('% Comments', 'essays')); ?></h3>
+	      <h3><?php comments_number( __('Leave a comment', 'essays'), __('One Comment', 'essays'), __('% Comments', 'essays')); ?></h3>
 	      <ol class="commentlist">
 <?php
 wp_list_comments( array( 'callback' => 'essays_comment' ) );
